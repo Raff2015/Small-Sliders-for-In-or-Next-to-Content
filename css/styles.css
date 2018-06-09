@@ -1,0 +1,406 @@
+/**{
+	outline: dotted pink;
+}*/
+
+/*controls white space around everything*/
+.kelly-container{
+padding:25px;
+width: 100%;
+}
+
+
+
+.pest-container{
+	width: 100%;
+}
+.disease-container{
+	width: 100%;
+}
+
+.toggle-buttons{
+	/*border: 65px solid;*/
+	padding:0px;
+
+	margin: 0px;
+}
+
+.pest-toggle{
+	width: 100%;
+}
+.disease-toggle{
+	width: 100%;
+}
+
+/*the row headers*/
+.my-content-heads-pest{
+	text-align: center;
+	background-color: ;
+	width: 100%;
+	padding: 0% !important;
+	margin: 0% !important;
+
+}
+
+/*the row headers*/
+.my-content-heads-disease{
+	text-align: center;
+	background-color: w;
+	width: 100%;
+	padding: 0% !important;
+	margin: 0% !important;
+
+}
+
+/*contolling the font and height of the button boxes*/
+/*button_style*/
+.disease-section{
+	background-color: ;
+	text-align: center;
+	height:300px;
+	font-size: 40px;
+	margin-bottom: 20px;  /*the whitespace below the buttons 1*/
+	border: solid  25px;
+	border-radius: 25px;
+
+}
+/*this will make the font 80px when the screen is larger then 601px*/
+@media screen and (min-width: 901px) {
+  .disease-section{
+    font-size: 80px;
+
+  }
+}
+
+/*this will make the font 80px when the screen is larger then 1200px*/
+@media screen and (min-width: 1600px) {
+  .disease-section{
+    font-size: 180px;
+  }
+}
+
+/*this will make the the button height 1/2 size when the screen is smaller then 601px*/
+/*not working*/
+@media screen and (max-width: 801px) {
+  .disease-section{
+    height: 110px;
+    width: 400px;
+    /*margin-left: 0px !important;*/
+
+  }
+}
+
+/*contolling the font and height of the button boxes*/
+/*button_style*/
+.pest-section{
+	background-color: ;
+	text-align: center;
+	height:300px;
+	font-size: 40px;
+	margin-bottom: 20px;  /*the whitespace below the buttons 2*/
+	/*border: solid black 25px;*/
+	/*border-radius: 25px;*/
+
+}
+
+/*this will make the font 80px when the screen is larger then 601px*/
+@media screen and (min-width: 901px) {
+  .pest-section{
+    font-size: 80px;
+  }
+}
+
+
+
+/*this will make the font 80px when the screen is larger then 1200px*/
+@media screen and (min-width: 1600px) {
+  .pest-section{
+    font-size: 180px;
+
+  }
+}
+
+
+
+/*this will make the the button height 1/2 size when the screen is smaller then 601px*/
+@media screen and (max-width: 801px) {
+  .pest-section{
+    height: 110px;
+    /*margin-right: 0px !important;*/
+  }
+}
+
+/*control for the pest section content*/
+.pest-content{
+	background-color: ;
+	text-align: center;
+	font-size: 3em;
+	padding:20px !important;
+
+
+}
+/**********************************************************/
+/*these two media queries control the font size for the pest content for zooming */
+/*START HERE!!!!!!!!!!!!!!!!!*/
+@media screen and (min-width: 901px) {
+  .pest-content h5{
+   /*font-size: 3.25rem !important;*/
+  }
+}
+@media screen and (max-width: 900px) {
+  .pest-content h5{
+   font-size: 1.25rem !important;
+  }
+}
+
+/*control for the pest section carousel*/
+.pest-carousel{
+	background-color: ;
+	text-align: center;
+	font-size: 3em;
+
+
+}
+
+
+/*control for the disease section content*/
+.disease-content{
+	background-color: ;
+	text-align: center;
+	padding:20px !important;
+}
+
+/*control for the disease section carousel*/
+.disease-carousel{
+	background-color: ;
+	text-align: center;
+}
+
+
+.ballon-no-btm-margin{
+	background-color: ;
+	text-align: center;
+}
+
+.blue{
+	background-color: ;
+}
+
+.green{
+	background-color: ;
+}
+
+
+
+/*this will ...... when the screen is larger then 601px*/
+/*@media screen and (min-width: 601px) {
+  .kelly-border-left{
+      border: solid black 5px;
+  }
+}*/
+
+/*================================Bootstrap Overrides========================*/
+
+/*this is a bootstrap class. we need to override it or the carosouls wont go full width. */
+.col-sm-6{
+	padding-right:0px;
+	padding-left:0px;
+}
+
+/*bootstrap added a btm margin by default */
+.no-btm-margin{
+	margin-bottom: 0px !important;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.kelly-border-left{
+  border: 40px solid transparent;
+    padding: 0px;
+    -webkit-border-image: url(../images/border-3.png) 20% round; /* Safari 3.1-5 */
+    -o-border-image: url(../images/border-3.png) 20% round; /* Opera 11-12.1 */
+    border-image: url(../images/border-3.png) 20% round;
+}
+
+.kelly-border-right{
+   /*margin-left: 20px;*/
+}
+
+.kelly-button-continer{
+padding-left: 50px;
+	padding-right: 50px;
+
+}
+
+.transition-timer-carousel .carousel-caption {
+background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 4%, rgba(0,0,0,0.5) 32%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(4%,rgba(0,0,0,0.1)), color-stop(32%,rgba(0,0,0,0.5)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.1) 4%,rgba(0,0,0,0.5) 32%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.1) 4%,rgba(0,0,0,0.5) 32%,rgba(0,0,0,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.1) 4%,rgba(0,0,0,0.5) 32%,rgba(0,0,0,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.1) 4%,rgba(0,0,0,0.5) 32%,rgba(0,0,0,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+width: 100%;
+left: 0px;
+right: 0px;
+bottom: 0px;
+text-align: left;
+padding-top: 5px;
+padding-left: 15%;
+padding-right: 15%;
+}
+.transition-timer-carousel .carousel-caption .carousel-caption-header {
+margin-top: 10px;
+font-size: 24px;
+}
+
+@media (min-width: 970px) {
+/* Lower the font size of the carousel caption header so that the caption
+doesn't take up the full image/slide on smaller screens */
+.transition-timer-carousel .carousel-caption .carousel-caption-header {
+font-size: 36px;
+}
+}
+.transition-timer-carousel .carousel-indicators {
+bottom: 0px;
+margin-bottom: 5px;
+}
+.transition-timer-carousel .carousel-control {
+z-index: 11;
+}
+.transition-timer-carousel .transition-timer-carousel-progress-bar {
+height: 5px;
+background-color: #5cb85c;
+width: 0%;
+margin: -5px 0px 0px 0px;
+border: none;
+z-index: 11;
+position: relative;
+}
+.transition-timer-carousel .transition-timer-carousel-progress-bar.animate{
+/*  Make the transition time shorter to avoid the slide transitioning
+before the timer bar is "full" - change the 4.25s here to fit your
+carousel's transition time */
+-webkit-transition: width 4.25s linear;
+-moz-transition: width 4.25s linear;
+-o-transition: width 4.25s linear;
+transition: width 4.25s linear;
+}
+
+
+/*Slider #2 */
+
+.transition-timer-carousel2 .carousel-caption {
+background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 4%, rgba(0,0,0,0.5) 32%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(4%,rgba(0,0,0,0.1)), color-stop(32%,rgba(0,0,0,0.5)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.1) 4%,rgba(0,0,0,0.5) 32%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.1) 4%,rgba(0,0,0,0.5) 32%,rgba(0,0,0,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.1) 4%,rgba(0,0,0,0.5) 32%,rgba(0,0,0,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.1) 4%,rgba(0,0,0,0.5) 32%,rgba(0,0,0,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+width: 100%;
+left: 0px;
+right: 0px;
+bottom: 0px;
+text-align: left;
+padding-top: 5px;
+padding-left: 15%;
+padding-right: 15%;
+}
+.transition-timer-carousel2 .carousel-caption .carousel-caption-header {
+margin-top: 10px;
+font-size: 24px;
+}
+
+@media (min-width: 970px) {
+/* Lower the font size of the carousel caption header so that the caption
+doesn't take up the full image/slide on smaller screens */
+.transition-timer-carousel2 .carousel-caption .carousel-caption-header {
+font-size: 36px;
+}
+}
+.transition-timer-carousel2 .carousel-indicators {
+bottom: 0px;
+margin-bottom: 5px;
+}
+.transition-timer-carousel2 .carousel-control {
+z-index: 11;
+}
+.transition-timer-carousel2 .transition-timer-carousel-progress-bar2 {
+height: 5px;
+background-color: #5cb85c;
+width: 0%;
+margin: -5px 0px 0px 0px;
+border: none;
+z-index: 11;
+position: relative;
+}
+.transition-timer-carousel2 .transition-timer-carousel-progress-bar2.animate{
+/*  Make the transition time shorter to avoid the slide transitioning
+before the timer bar is "full" - change the 4.25s here to fit your
+carousel's transition time */
+-webkit-transition: width 4.25s linear;
+-moz-transition: width 4.25s linear;
+-o-transition: width 4.25s linear;
+transition: width 4.25s linear;
+}
+
+
+
+
+
+/*Slider #3 */
+
+.transition-timer-carousel3 .carousel-caption {
+background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 4%, rgba(0,0,0,0.5) 32%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(4%,rgba(0,0,0,0.1)), color-stop(32%,rgba(0,0,0,0.5)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.1) 4%,rgba(0,0,0,0.5) 32%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.1) 4%,rgba(0,0,0,0.5) 32%,rgba(0,0,0,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.1) 4%,rgba(0,0,0,0.5) 32%,rgba(0,0,0,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.1) 4%,rgba(0,0,0,0.5) 32%,rgba(0,0,0,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+width: 100%;
+left: 0px;
+right: 0px;
+bottom: 0px;
+text-align: left;
+padding-top: 5px;
+padding-left: 15%;
+padding-right: 15%;
+}
+.transition-timer-carousel3 .carousel-caption .carousel-caption-header {
+margin-top: 10px;
+font-size: 24px;
+}
+
+@media (min-width: 970px) {
+/* Lower the font size of the carousel caption header so that the caption
+doesn't take up the full image/slide on smaller screens */
+.transition-timer-carousel3 .carousel-caption .carousel-caption-header {
+font-size: 36px;
+}
+}
+.transition-timer-carousel3 .carousel-indicators {
+bottom: 0px;
+margin-bottom: 5px;
+}
+.transition-timer-carousel3 .carousel-control {
+z-index: 11;
+}
+.transition-timer-carousel3 .transition-timer-carousel-progress-bar3 {
+height: 5px;
+background-color: #5cb85c;
+width: 0%;
+margin: -5px 0px 0px 0px;
+border: none;
+z-index: 11;
+position: relative;
+}
+.transition-timer-carousel3 .transition-timer-carousel-progress-bar3.animate{
+/*  Make the transition time shorter to avoid the slide transitioning
+before the timer bar is "full" - change the 4.25s here to fit your
+carousel's transition time */
+-webkit-transition: width 4.25s linear;
+-moz-transition: width 4.25s linear;
+-o-transition: width 4.25s linear;
+transition: width 4.25s linear;
+}
